@@ -1,10 +1,16 @@
 #include <stdio.h>
-#include "../../SharedProject/Hello.h"
+#include "../../SharedProjects/BuildInProject_IntermediateInProject/Func.h"
+#include "../../SharedProjects/BuildInProject_IntermediateInSolution/Func.h"
+#include "../../SharedProjects/BuildInSolution_IntermediateInProject/Func.h"
+#include "../../SharedProjects/BuildInSolution_IntermediateInSolution/Func.h"
 
 int main()
 {
-	printf("Hello World!\n");
-	Hello("Project 2");
+	printf("I am Project 2!\n");
+	BuildInProject_IntermediateInProject();
+	BuildInProject_IntermediateInSolution();
+	BuildInSolution_IntermediateInProject();
+	BuildInSolution_IntermediateInSolution();
 
 	return 0;
 }

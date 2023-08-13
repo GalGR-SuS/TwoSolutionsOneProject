@@ -21,32 +21,32 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{03068161-0d82-4641-980d-d9459a34d957}</ProjectGuid>
-    <RootNamespace>Project1</RootNamespace>
+    <ProjectGuid>{fb2d7f39-73b5-4982-ae4e-2f2f484f4bd3}</ProjectGuid>
+    <RootNamespace>BuildInSolutionIntermediateInProject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -72,23 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(OutDir)TMP\</IntDir>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\TMP\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(OutDir)TMP\</IntDir>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\TMP\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(OutDir)TMP\</IntDir>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\TMP\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(OutDir)TMP\</IntDir>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Build\$(SMB_PLATFORM_TOOLSET)\$(Platform)\$(Configuration)\TMP\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -147,21 +147,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Project1.cpp" />
+    <ClCompile Include="Func.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SharedProjects\BuildInProject_IntermediateInProject\BuildInProject_IntermediateInProject.vcxproj">
-      <Project>{3c408930-2369-4610-af5c-7dde230567b7}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SharedProjects\BuildInProject_IntermediateInSolution\BuildInProject_IntermediateInSolution.vcxproj">
-      <Project>{3701b70b-abab-4e78-8ae0-a4ce2ee5d437}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SharedProjects\BuildInSolution_IntermediateInProject\BuildInSolution_IntermediateInProject.vcxproj">
-      <Project>{fb2d7f39-73b5-4982-ae4e-2f2f484f4bd3}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SharedProjects\BuildInSolution_IntermediateInSolution\BuildInSolution_IntermediateInSolution.vcxproj">
-      <Project>{41ac8858-a4be-4e88-b426-a03c2a4cb4bd}</Project>
-    </ProjectReference>
+    <ClInclude Include="Func.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -150,8 +150,17 @@
     <ClCompile Include="Project2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SharedProject\SharedProject.vcxproj">
+    <ProjectReference Include="..\..\SharedProjects\BuildInProject_IntermediateInProject\BuildInProject_IntermediateInProject.vcxproj">
       <Project>{3c408930-2369-4610-af5c-7dde230567b7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedProjects\BuildInProject_IntermediateInSolution\BuildInProject_IntermediateInSolution.vcxproj">
+      <Project>{3701b70b-abab-4e78-8ae0-a4ce2ee5d437}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedProjects\BuildInSolution_IntermediateInProject\BuildInSolution_IntermediateInProject.vcxproj">
+      <Project>{fb2d7f39-73b5-4982-ae4e-2f2f484f4bd3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedProjects\BuildInSolution_IntermediateInSolution\BuildInSolution_IntermediateInSolution.vcxproj">
+      <Project>{41ac8858-a4be-4e88-b426-a03c2a4cb4bd}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
