@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project2", "Project2\Project2.vcxproj", "{190670D3-A364-4151-8C87-2B5C550F71A8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildInProject_IntermediateInProject", "..\SharedProjects\BuildInProject_IntermediateInProject\BuildInProject_IntermediateInProject.vcxproj", "{3C408930-2369-4610-AF5C-7DDE230567B7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildShared_IntermediateShared", "..\SharedProjects\BuildShared_IntermediateShared\BuildShared_IntermediateShared.vcxproj", "{3C408930-2369-4610-AF5C-7DDE230567B7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildInSolution_IntermediateInSolution", "..\SharedProjects\BuildInSolution_IntermediateInSolution\BuildInSolution_IntermediateInSolution.vcxproj", "{41AC8858-A4BE-4E88-B426-A03C2A4CB4BD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildNotShared_IntermediateNotShared", "..\SharedProjects\BuildNotShared_IntermediateNotShared\BuildNotShared_IntermediateNotShared.vcxproj", "{41AC8858-A4BE-4E88-B426-A03C2A4CB4BD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildInProject_IntermediateInSolution", "..\SharedProjects\BuildInProject_IntermediateInSolution\BuildInProject_IntermediateInSolution.vcxproj", "{3701B70B-ABAB-4E78-8AE0-A4CE2EE5D437}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildShared_IntermediateNotShared", "..\SharedProjects\BuildShared_IntermediateNotShared\BuildShared_IntermediateNotShared.vcxproj", "{3701B70B-ABAB-4E78-8AE0-A4CE2EE5D437}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildInSolution_IntermediateInProject", "..\SharedProjects\BuildInSolution_IntermediateInProject\BuildInSolution_IntermediateInProject.vcxproj", "{FB2D7F39-73B5-4982-AE4E-2F2F484F4BD3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildNotShared_IntermediateShared", "..\SharedProjects\BuildNotShared_IntermediateShared\BuildNotShared_IntermediateShared.vcxproj", "{FB2D7F39-73B5-4982-AE4E-2F2F484F4BD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

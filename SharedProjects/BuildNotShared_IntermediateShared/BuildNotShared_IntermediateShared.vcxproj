@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{fb2d7f39-73b5-4982-ae4e-2f2f484f4bd3}</ProjectGuid>
-    <RootNamespace>BuildInSolutionIntermediateInProject</RootNamespace>
+    <RootNamespace>BuildNotSharedIntermediateShared</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
