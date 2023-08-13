@@ -1,0 +1,3 @@
+# Explanation
+
+Two solutions write to the same build directories, and because Visual Studio is a %#$@!% software, each solution acts like "mama cat" if anyone else touches their build files - thus forcing a rebuild each time. By separating the build files for each solution, just like the default build path for new solutions in Visual Studio, we can avoid rebuilding the shared projects each time we compile a different solution.
